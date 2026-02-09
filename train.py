@@ -26,8 +26,8 @@ for i in range(3):
             if source_graph != target_graphs:
                 print("S -----> T: {}------->{}".format(source_graph, target_graph))
 
-                data_s = load_pyg_data3('data/{}.mat'.format(source_graph), label_rate=0.5)
-                data_t = load_pyg_data3('data/{}.mat'.format(target_graph), label_rate=0.5)
+                data_s = load_pyg_data3('{}.mat'.format(source_graph), label_rate=0.5)
+                data_t = load_pyg_data3('{}.mat'.format(target_graph), label_rate=0.5)
                 # 存储5次运行的结果
                 all_best_accs = []
                 all_best_ma_f1s = []
